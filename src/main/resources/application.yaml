@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: CineGraudos
+  datasource:
+    url: ${DB_URL}
+    username: postgres
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
