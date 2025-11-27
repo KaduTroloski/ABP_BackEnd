@@ -44,6 +44,15 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 
 ---
 
+## 🚀 Tecnologias Utilizadas
+
+- Java
+- Spring
+- Postgresql
+- Git
+
+---
+
 ## 🧩 Principais Funcionalidades dos Modelos (Entidades)
 
 ### 1. Usuários
