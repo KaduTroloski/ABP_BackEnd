@@ -13,7 +13,7 @@ public class FilmesEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_filmes;
+    private Integer id_filmes;
 
     private String nome;
 
