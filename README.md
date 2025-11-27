@@ -18,6 +18,12 @@ O sistema contará com **duas partes integradas**:
 - **Público externo:** navegação e reserva de sessões.  
 - **Uso interno:** administração de filmes, sessões, salas e reservas.
 
+A API busca desenvolver:
+→ centralizar todas as informações,<br>
+→ agilizar processos essenciais,<br>
+→ garantir segurança,<br>
+→ e permitir acesso organizado e controlado aos dados.
+
 ---
 
 ## 🚫 Problema do Tema
