@@ -20,6 +20,14 @@ O sistema contará com **duas partes integradas**:
 
 ---
 
+## 🚫 Problema do tema
+
+Cinemas modernos dependem de sistemas digitais para organizar seu funcionamento diário. Sem uma plataforma eficiente, surgem diversos problemas como dificuldade na hora de gerenciar horários, ausência de controles de assentos, processos manuais...
+
+Buscando agilizar o processo num geral, modernizando-o.
+
+---
+
 ## ⚙️ Funcionalidades da API
 
 ### 1. Gerenciamento das Entidades do Banco de Dados
