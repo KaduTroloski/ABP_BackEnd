@@ -9,7 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "sessoes")
+@Table(name = "reservas")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,5 +27,5 @@ public class ReservasEntity {
 
     @ManyToOne()
     @JoinColumn(name = "id_sessao")
-    private  SessoesEntity sessao;
+    private SessoesEntity sessao;
 }
