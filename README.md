@@ -86,17 +86,17 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 
 ## 🗃️ Estrutura de pastas
 
-│
-├── config/
-├── controller/
-├── domain/
-│   ├── dto/
-│   ├── entity/
-│   ├── mapper/
-├── repository/
-├── service/
-├── util/
-└── validation/
+├── config/ <br>
+├── controller/ <br>
+├── domain/ <br>
+&nbsp;&nbsp;&nbsp; ├── dto/ <br>
+&nbsp;&nbsp;&nbsp; ├── entity/ <br>
+&nbsp;&nbsp;&nbsp; ├── mapper/ <br>
+├── repository/ <br>
+├── service/ <br>
+├── util/ <br>
+└── validation/ <br>
+
 
 
 ## ❗ Exemplos de Erros HTTP
