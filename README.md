@@ -111,6 +111,18 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 - Registra o preço final do assento (pode variar conforme o tipo).
 
 ---
+## ❗ Exemplos de Erros HTTP
+
+| Código  | Motivo            | Exemplo                                   |
+| ------- | ----------------- | ----------------------------------------- |
+| **400** | Erro de validação | Campos obrigatórios ausentes              |
+| **401** | Sem autenticação  | Token ausente ou inválido                 |
+| **403** | Sem permissão     | Usuário tentando acessar recurso proibido |
+| **404** | Não encontrado    | Filme ou sessão inexistente               |
+| **409** | Conflito          | E-mail duplicado, assento já reservado    |
+| **500** | Erro interno      | Falha inesperada no servidor              |
+
+---
 
 ## 🧱 Descrições e Atributos dos Modelos (Entidades)
 
@@ -125,3 +137,25 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 | **Sessoes** | Define os horários e filmes em exibição. | `id_sessao`, `id_sala`, `id_filme`, `horario_inicio`, `horario_fim`, `preco_base` |
 | **Reservas** | Representa as reservas feitas pelos usuários. | `id_reserva`, `id_usuario`, `id_sessao`, `status` |
 | **Assento_Reserva** | Faz a relação entre reserva e assento. | `id_assento_reserva`, `id_reserva`, `id_assento`, `preco_final` |
+
+## ▶️ Como Executar o Projeto Localmente
+
+Clonar o repositório
+
+git clone <url-do-repositorio>
+`cd ABP_BackEnd`
+
+Instalar dependências
+`npm install`
+
+Configurar variáveis de ambiente
+- Criar arquivo .env com:
+
+`DB_PASSWORD=ashhba287482$%7339hb$hbs$BHBBBBBB@@`
+`DB_URL=jdbc:postgresql://db.azcbvxrbulisbfvzehir.supabase.co:5432/postgres`
+
+Rodar o servidor
+`npm run dev`
+
+A API estará disponível em:
+http://localhost:3000
