@@ -20,7 +20,7 @@ O sistema contará com **duas partes integradas**:
 
 ---
 
-## 🚫 Problema do tema
+## 🚫 Problema do Tema
 
 Cinemas modernos dependem de sistemas digitais para organizar seu funcionamento diário. Sem uma plataforma eficiente, surgem diversos problemas como dificuldade na hora de gerenciar horários, ausência de controles de assentos, processos manuais...
 
@@ -56,7 +56,7 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 
 - Java
 - Spring
-- Postgresql
+- PostgreSQL
 - Git
 
 ---
