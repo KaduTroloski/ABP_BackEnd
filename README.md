@@ -97,7 +97,7 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 ├── util/ <br>
 └── validation/ <br>
 
-
+---
 
 ## ❗ Exemplos de Erros HTTP
 
