@@ -83,6 +83,22 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 - Registra o preço final do assento (pode variar conforme o tipo).
 
 ---
+
+## 🗃️ Estrutura de pastas
+
+│
+├── config/
+├── controller/
+├── domain/
+│   ├── dto/
+│   ├── entity/
+│   ├── mapper/
+├── repository/
+├── service/
+├── util/
+└── validation/
+
+
 ## ❗ Exemplos de Erros HTTP
 
 | Código  | Motivo            | Exemplo                                   |
@@ -98,8 +114,8 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 
 | Entidade | Descrição | Principais Atributos |
 |-----------|------------|----------------------|
-| **Usuarios** | Representa os usuários do sistema (clientes ou administradores). | `id_usuario`, `nome`, `sobrenome`, `email`, `senha`, `id_cinema`, `acessos` |
-| **Cinemas** | Armazena os dados dos cinemas cadastrados. | `id_cinema`, `nome`, `localizacao` |
+| **Usuarios** | Representa os usuários do sistema (clientes ou administradores). | `id_usuario`, `nome`, `sobrenome`, `email`, `senha`, `id_cinema`, `acessos`, `id_funcao`|
+| **Cinemas** | Armazena os dados dos cinemas cadastrados. | `id_cinema`, `nome`, `localizacao` , `horario_inicio`, `horario_fim`|
 | **Localizacoes** | Define os endereços dos cinemas. | `id_localizacao`, `cep`, `cidade`, `bairro`, `rua`, `numero`, `uf` |
 | **Filmes** | Define os filmes exibidos. | `id_filme`, `nome`, `descricao`, `duracao` |
 | **Salas** | Define as salas de cada cinema. | `id_sala`, `numero`, `layout`, `capacidade`, `id_cinema` |
@@ -107,6 +123,8 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 | **Sessoes** | Define os horários e filmes em exibição. | `id_sessao`, `id_sala`, `id_filme`, `horario_inicio`, `horario_fim`, `preco_base` |
 | **Reservas** | Representa as reservas feitas pelos usuários. | `id_reserva`, `id_usuario`, `id_sessao`, `status` |
 | **Assento_Reserva** | Faz a relação entre reserva e assento. | `id_assento_reserva`, `id_reserva`, `id_assento`, `preco_final` |
+| **funcoes** | Armazena os nomes das funções | `id_funcoes`, `nome` |
+
 
 ## ▶️ Como Executar o Projeto Localmente
 
