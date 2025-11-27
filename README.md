@@ -142,7 +142,7 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 
 Clonar o repositório
 
-git clone <url-do-repositorio>
+`git clone <url-do-repositorio>`
 `cd ABP_BackEnd`
 
 Instalar dependências
