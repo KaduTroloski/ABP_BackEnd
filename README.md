@@ -152,6 +152,7 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 Clonar o repositório
 
 `git clone <url-do-repositorio>`
+
 `cd ABP_BackEnd`
 
 Instalar dependências
@@ -161,6 +162,7 @@ Configurar variáveis de ambiente
 - Criar arquivo .env com:
 
 `DB_PASSWORD=ashhba287482$%7339hb$hbs$BHBBBBBB@@`
+
 `DB_URL=jdbc:postgresql://db.azcbvxrbulisbfvzehir.supabase.co:5432/postgres`
 
 Rodar o servidor
