@@ -40,6 +40,8 @@ Buscando agilizar o processo num geral, modernizando-o.
 Permite **cadastro, edição, listagem e exclusão** das entidades do sistema, como usuários e sessoes
 Essa camada garante **controle total e integridade dos dados**.
 
+---
+
 ### 2. Autenticação JWT (JSON Web Token)
 O login será baseado em **tokens JWT**, garantindo **segurança e praticidade**.  
 Após o login, o servidor gera um token criptografado que valida todas as requisições subsequentes, permitindo acesso apenas a usuários autenticados.
