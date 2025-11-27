@@ -19,11 +19,14 @@ import java.time.Instant;
 public class SessoesEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_sessoes;
+    @Column(name = "id_sessoes")
+    private Integer idSessoes;
 
-    private Instant horario_inicio;
+    @Column(name = "horario_inicio")
+    private Instant horarioInicio;
 
-    private Instant horario_fim;
+    @Column(name = "horario_fim")
+    private Instant horarioFim;
 
     private float preco_base;
 
