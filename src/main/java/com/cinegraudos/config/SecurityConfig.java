@@ -23,6 +23,12 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/usuarios/*").authenticated()
                         .requestMatchers(HttpMethod.PUT, "/usuarios/*").authenticated()
                         .requestMatchers(HttpMethod.DELETE, "/usuarios/*").authenticated()
+                        .requestMatchers(HttpMethod.POST, "/sessoes").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/sessoes/*").authenticated()
+                        .requestMatchers(HttpMethod.DELETE, "/sessoes/*").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/sessoes/*").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/reservar").authenticated()
+                        .requestMatchers(HttpMethod.POST, "/reservar/*").hasRole("ADMIN")
                         .anyRequest().permitAll()
                 )
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
