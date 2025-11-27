@@ -19,10 +19,10 @@ O sistema contará com **duas partes integradas**:
 - **Uso interno:** administração de filmes, sessões, salas e reservas.
 
 A API busca desenvolver: <br>
-→ centralizar todas as informações,<br>
-→ agilizar processos essenciais,<br>
-→ garantir segurança,<br>
-→ e permitir acesso organizado e controlado aos dados.
+- centralizar todas as informações,<br>
+- agilizar processos essenciais,<br>
+- garantir segurança,<br>
+- e permitir acesso organizado e controlado aos dados.
 
 ---
 
