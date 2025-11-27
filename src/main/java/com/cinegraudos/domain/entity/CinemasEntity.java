@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import java.time.LocalTime;
 
 @Entity
 @Table(name = "cinemas")
@@ -19,6 +20,10 @@ public class CinemasEntity {
     private Integer id_cinemas;
 
     private String nome;
+
+    private LocalTime horario_abertura;
+
+    private LocalTime horario_fechamento;
 
     @ManyToOne()
     @JoinColumn(name = "id_localizacao")
