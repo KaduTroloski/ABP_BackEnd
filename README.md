@@ -23,7 +23,7 @@ O sistema contará com **duas partes integradas**:
 ## ⚙️ Funcionalidades da API
 
 ### 1. Gerenciamento das Entidades do Banco de Dados
-Permite **cadastro, edição, listagem e exclusão** de todas as entidades do sistema, como usuários, cinemas, salas, filmes, sessões, assentos e reservas.  
+Permite **cadastro, edição, listagem e exclusão** das entidades do sistema, como usuários e sessoes
 Essa camada garante **controle total e integridade dos dados**.
 
 ### 2. Autenticação JWT (JSON Web Token)
@@ -34,7 +34,7 @@ Após o login, o servidor gera um token criptografado que valida todas as requis
 As senhas dos usuários são armazenadas de forma segura, utilizando funções de **hash (bcrypt ou SHA-256)**, evitando exposição em caso de vazamento.
 
 ### 4. Tratamento de Erros em Todas as Camadas
-O sistema possui **tratamento centralizado de erros**, fornecendo respostas **claras e padronizadas**, tanto para falhas internas quanto para erros de entrada, garantindo estabilidade e facilidade na depuração.
+O sistema possui **tratamento centralizado de erros**, fornecendo respostas para falhas
 
 ### 5. Geração Automática de Sessões
 Processo automatizado que cria **sessões de filmes** com base na **duração, disponibilidade de salas e horários**, reduzindo o esforço manual e mantendo o cronograma sempre atualizado.
@@ -61,44 +61,7 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 - Associação de um usuário a um cinema (funcionário ou administrador).  
 - Controle de acessos (campo `acessos` define o nível de permissão).
 
----
-
-### 2. Cinemas
-**Funcionalidades:**
-- Cadastro de cinemas e vínculo com uma localização.  
-- Relacionamento com salas, usuários e sessões.
-
----
-
-### 3. Localizações
-**Funcionalidades:**
-- Armazena endereço completo de cinemas (CEP, cidade, bairro, rua, número e UF).
-
----
-
-### 4. Filmes
-**Funcionalidades:**
-- Controle de catálogo de filmes (nome, descrição e duração).  
-- Associação com sessões.
-
----
-
-### 5. Salas
-**Funcionalidades:**
-- Gerenciamento das salas de exibição por cinema.  
-- Definição de layout e capacidade máxima.  
-- Associação com assentos e sessões.
-
----
-
-### 6. Assentos
-**Funcionalidades:**
-- Controle detalhado por fileira, número e tipo (VIP, comum, acessível).  
-- Associação com uma sala e reservas específicas.
-
----
-
-### 7. Sessões
+### 2. Sessões
 **Funcionalidades:**
 - Ligação entre filme, sala e horário.  
 - Definição de preço base.  
@@ -106,7 +69,7 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 
 ---
 
-### 8. Reservas
+### 3. Reservas
 **Funcionalidades:**
 - Registro de reservas feitas por usuários.  
 - Associação entre usuário, sessão e assento.  
@@ -114,7 +77,7 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 
 ---
 
-### 9. Assento_Reserva
+### 4. Assento_Reserva
 **Funcionalidades:**
 - Define qual assento foi reservado em uma sessão.  
 - Registra o preço final do assento (pode variar conforme o tipo).
@@ -124,8 +87,6 @@ O sistema define **níveis de acesso diferenciados** (administrador, funcionári
 
 | Código  | Motivo            | Exemplo                                   |
 | ------- | ----------------- | ----------------------------------------- |
-| **400** | Erro de validação | Campos obrigatórios ausentes              |
-| **401** | Sem autenticação  | Token ausente ou inválido                 |
 | **403** | Sem permissão     | Usuário tentando acessar recurso proibido |
 | **404** | Não encontrado    | Filme ou sessão inexistente               |
 | **409** | Conflito          | E-mail duplicado, assento já reservado    |
@@ -155,18 +116,8 @@ Clonar o repositório
 
 `cd ABP_BackEnd`
 
-Instalar dependências
-`npm install`
+`Definir o DB_PASSWORD e DB_URL em uma configuração de execução`
 
-Configurar variáveis de ambiente
-- Criar arquivo .env com:
-
-`DB_PASSWORD=ashhba287482$%7339hb$hbs$BHBBBBBB@@`
-
-`DB_URL=jdbc:postgresql://db.azcbvxrbulisbfvzehir.supabase.co:5432/postgres`
-
-Rodar o servidor
-`npm run dev`
 
 A API estará disponível em:
-http://localhost:3000
+http://localhost:8080
